@@ -1,0 +1,43 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+/* !! */
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#burgerInput{
+  display: block;
+  margin: 0 auto; 
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(52, 52, 165, 0.99);
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,59 @@
+
+<a1><img src="./assets/img/burger.png" id="burger_img" width="100" height="100">
+  </a1>
+<h1>Eat-Da-Burger!</h1>
+
+{{!-- <p>Assume bootstrap stylings and javascript is sourced by main layout<\p> --}}
+<div class="row">
+  <div class="col-md-1"></div>
+    <div class="col-md-3">
+      <!-- Pass in data from server.js -->
+      <ul>
+        {{#each burgers}}
+        {{#if this.devoured}}
+        {{else}}
+       	<div id="{{this.id}}">
+          <p>{{this.id}}
+        		<span class="label">.   </span> {{this.burger_name}}</p>
+          </div>
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+      <!-- Pass in data from server.js -->
+      <ul>
+        {{#each burgers}}
+        {{#if this.devoured}}
+        {{else}}
+          <button class="devour-buttons" type="submit" value="{{this.id}}">Devour it!</button>
+          <br>
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <!-- Pass in data from server.js -->
+      <ul>
+        {{#each burgers}}
+        {{#if this.devoured}}
+        <div id="{{this.id}}">
+          <p>{{this.id}}
+            <span class="label">.   </span> {{this.burger_name}}</p>
+        </div>
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+
+  <div class="col-md-1"></div>
+</div>
+
+<div>
+  <input type="text" id="burgerInput" name="burgerInputText">
+</div>
+
+<button class="button" type="submit" id="submitBtn">Submit</button>
+<h2>Enter a burger you want to eat Click the "Submit" button</h2>
