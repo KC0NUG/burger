@@ -18,7 +18,7 @@ if (process.env.JAWSDB_URL) {
 	connection = mysql.createConnection(process.env.JAWSDB_URL);
 }
 else {
-	const DEFAULT_URL='mysql://root:NULL@localhost/burgers_db';
+	const DEFAULT_URL='mysql://root:password@localhost/burgers_db';
 	console.log(DEFAULT_URL);
 	connection = mysql.createConnection(DEFAULT_URL);
 }
